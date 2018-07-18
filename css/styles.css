@@ -1,0 +1,7 @@
+.container {
+  background: rgb(149, 190, 188);
+}
+.inactive {
+  text-decoration: line-through;
+  color: rgb(161, 163, 162);
+}
