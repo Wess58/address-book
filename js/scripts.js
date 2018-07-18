@@ -6,15 +6,15 @@ $(document).ready(function() {
     $("ul#listDisplay").append('<li class="item active"><input type="checkbox" class="lsItem"> '+listItem+'</li>');
     $("input#todoItem").val("");
 
-
-    $("input.lsItem").last().change(function(){
-      var input = $(this);
-      if(input.prop("checked")){
-        $(".item").last().toggleClass("inactive");
-      }else {
-        $(".item").last().toggleClass("inactive");
-      }
-    });
-
   });
+
+  $("input.lsItem").change(function(){
+    var input = $(this);
+    if(input.last().prop("checked")){
+      $(".item").last().toggleClass("inactive");
+    }else {
+      $(".item").last().toggleClass("inactive");
+    }
+  });
+
 });
